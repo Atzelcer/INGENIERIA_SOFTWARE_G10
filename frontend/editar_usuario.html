@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Editar Usuario</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <section class="barra-superior">
+    <h1 class="titulo-pagina">EDITAR USUARIO</h1>
+  </section>
+
+  <main>
+    <form id="usuarioForm" class="formulario">
+      <label for="nombres"><strong>Nombres:</strong></label>
+      <input type="text" id="nombres" name="nombres" required>
+
+      <label for="apellidos"><strong>Apellidos:</strong></label>
+      <input type="text" id="apellidos" name="apellidos" required>
+
+      <label for="correo"><strong>Correo electrónico:</strong></label>
+      <input type="email" id="correo" name="correo" required>
+
+      <label for="usuario"><strong>Nombre de usuario:</strong></label>
+      <input type="text" id="usuario" name="usuario" required>
+
+      <label for="contrasenia"><strong>Contraseña:</strong></label>
+      <input type="password" id="contrasenia" name="contrasenia" required>
+
+      <label for="rol"><strong>Gestión de roles:</strong></label>
+      <select id="rol" name="rol" required>
+        <option value="">Seleccionar rol</option>
+        <option value="Jefe de Ventas">Jefe de Ventas</option>
+        <option value="Vendedor">Vendedor</option>
+      </select>
+
+      <fieldset id="permisosContainer">
+        <legend><strong>PERMISOS ASIGNADOS</strong></legend>
+        <!-- Permisos dinámicos -->
+      </fieldset>
+
+      <label for="estado"><strong>Estado:</strong></label>
+      <select id="estado" name="estado" required>
+        <option value="Activo">Activo</option>
+        <option value="Inactivo">Inactivo</option>
+      </select>
+
+      <button type="submit">ACTUALIZAR USUARIO</button>
+    </form>
+  </main>
+  <script src="js/particle.js"></script>
+  <script type="module" src="js/editar.js"></script>
+</body>
+</html>
